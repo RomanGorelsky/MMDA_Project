@@ -1,0 +1,39 @@
+============================================================
+SHAP ANALYSIS SUMMARY REPORT
+============================================================
+
+Analysis Date: 2026-06-15 11:44:58.588272
+Models Directory: saved_final_models/final_models_20260615_104839
+Results Directory: saved_final_models/final_models_20260615_104839/shap_analysis_results
+
+MODELS ANALYZED:
+----------------------------------------
+  ✓ Logistic Regression
+  ✓ Linear SVM
+  ✓ SGD Linear SVM
+  ✓ Random Forest
+  ✓ Extra Trees
+  ✓ HistGradientBoosting
+  ✓ Voting Ensemble
+
+ANALYSIS METHODS:
+----------------------------------------
+  • Logistic Regression: LinearExplainer + SHAP summary plots
+  • Linear SVM: LinearExplainer + SHAP summary plots
+  • SGD Linear SVM: Coefficient importance analysis
+  • Random Forest: TreeExplainer + SHAP summary plots + Feature importance
+  • Extra Trees: TreeExplainer + SHAP summary plots + Feature importance
+  • HistGradientBoosting: TreeExplainer + SHAP summary plots + Feature importance
+  • Voting Ensemble: Individual estimator analysis
+
+OUTPUT FILES:
+----------------------------------------
+  Each model folder contains:
+    • shap_values.joblib - Computed SHAP values
+    • shap_summary_*.png - SHAP summary plots by class
+    • feature_importance.png/csv - Feature importance (tree models)
+    • coefficient_importance.png/csv - Coefficient analysis (linear models)
+
+============================================================
+END OF REPORT
+============================================================
